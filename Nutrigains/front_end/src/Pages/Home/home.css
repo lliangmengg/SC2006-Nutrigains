@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.1); /* Adjusted hero background color */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+.hero-content {
+    max-width: 60%;
+    margin: 0 auto; /* Center horizontally in the hero container */
+    text-align: center; /* Increased max-width for better readability */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Increased font size for better emphasis */
+    margin-bottom: 30px; /* Reduced margin for tighter spacing */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px; /* Increased margin for better spacing */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 12px 24px; /* Increased padding for larger button size */
+    text-decoration: none;
+    border-radius: 8px; /* Increased border radius for rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #27ae60;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Increased gap for better separation */
+    overflow: hidden; /* Hide the overflow for smooth animations */
+    align-items: center;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Increased padding for better spacing */
+    opacity: 0; /* Initially hide the features */
+    transform: translateX(100%); /* Initially position features off-screen to the right */
+    animation: slideInRight 1s forwards; /* Apply the slide-in animation */
+}
+
+.feature:nth-child(even) {
+    transform: translateX(-100%); /* Position even features off-screen to the left */
+    animation: slideInLeft 1s forwards; /* Apply the slide-in animation for even features */
+}
+
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Animate to the original position */
+    }
+}
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Animate to the original position */
+    }
+}
+
+.feature-content,
+.feature-image {
+    flex: 1;
+    text-align: center;
+}
+
+.feature-content h2 {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+    font-size: 1.8rem; /* Increased font size for better readability */
+    text-align: center;
+}
+
+.feature-content p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.feature-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.feature:nth-child(odd) {
+    background: linear-gradient(120deg, rgba(9, 96, 45, 0.9), rgba(83, 255, 155, 0.9)); /* Adjusted gradient colors and opacity for even features */
+    color: #fff;
+}
+
+.feature:nth-child(even) {
+    background: linear-gradient(120deg, rgba(83, 255, 155, 0.9), rgba(9, 96, 45, 0.9)); /* Adjusted gradient colors and opacity for odd features */
+    color: #fff;
+}
+
+
+.feature-content h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.feature-content p {
+    color: #fff; /* Text color for features with gradient backgrounds */
+    text-align: center;
+}
+
+.feature-link {
+    color: #9db5a7; /* Set link color */
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Added transition effect */
+    font-size: 1.2rem; /* Increased font size for better readability */
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px; /* Adjust the margin as needed */
+}
+
+.search-bar input[type="text"] {
+    width: 50%; /* Adjust the width as needed */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px 0 0 25px; /* Rounded edges on the left side */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 1rem;
+    background-color: #333; /* Dark background for input */
+    color: #fff; /* Light text color */
+}
+
+.filters-button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #2ecc71; /* Adjust the background color as needed */
+    color: #fff;
+    border-radius: 0 25px 25px 0; /* Rounded edges on the right side */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.filters-button:hover {
+    background-color: #27ae60; /* Adjust the hover background color as needed */
+}
+
+/* home.css */
+
+.logo-img {
+    height: auto; /* Maintain aspect ratio */
+    width: 40px; /* Adjust width as needed */
+    border-radius: 10px; /* Rounded corners */
+    /* You might want to add margins or additional styling */
+  }
+  

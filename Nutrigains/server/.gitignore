@@ -1,0 +1,6 @@
+/venv
+/.env
+/__pycache__
+/Boundary/__pycache__
+/Control/__pycache__
+/Entity/__pycache__

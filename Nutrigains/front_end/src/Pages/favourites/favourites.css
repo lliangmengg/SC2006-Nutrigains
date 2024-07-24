@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background for contrast */
+    color: #E8E8E8; /* Slightly softer white for text */
+    padding-top: 80px;
+}
+
+.favourite-meals {
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meal {
+    display: flex;
+    background-color: #1e272e; /* Darker element backgrounds for a subtle look */
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+
+.meal img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.meal-info p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.meal-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for the meal entries */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* A red color for the delete button for intuitive UX */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+
+.delete-button:focus {
+    outline: none; /* Removing the focus outline for aesthetics */
+}
+
+/* Adding a little more style for when no meals are available */
+.no-meals {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+

@@ -1,0 +1,142 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background color */
+    color: #fff; /* Light text color for contrast */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    top: 80px; /* Offset for the header */
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column; /* Change to column to manage vertical space */
+}
+
+.chat-container {
+    flex-grow: 1; /* Take up all available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100% - 60px); /* Subtract the header height */
+}
+
+.chat-window {
+    background-color: #2c2f33;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 10px;
+    background-color: #23272a;
+    text-align: center;
+    font-size: 1.2rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative; /* Needed for absolute positioning of the button */
+}
+
+.chat-body {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; /* Ensures flex properties apply to children */
+}
+
+
+
+.clear-chat-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #2ecc71; /* Match the greenish theme color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.clear-chat-button:hover {
+    background-color: #27ae60; /* Darker shade for hover effect */
+}
+
+
+.chat-input {
+    padding: 10px;
+    background-color: #23272a;
+    display: flex;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #40444b;
+    color: #fff;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #2ecc71; /* Change to greenish theme color */
+    color: #fff;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #27ae60; /* Darker shade for hover effect */
+}
+
+.chat-message {
+    max-width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.user-message {
+    background-color: #2ecc71; /* Blue color for user messages */
+    align-self: flex-start; /* Align to right */
+}
+
+.bot-message {
+    background-color: #23272a; /* Adjusted for better visibility of meal cards */
+    align-self: flex-end; /* Changed alignment to start for consistency */
+    flex-direction: column; /* To layout text and meals vertically */
+}
+.meal-responses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding-top: 80px;
+}
+
+
+.nutrition-tracking {
+    padding: 50px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.nutrition-tracking h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.progress-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.progress {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-value {
+    background-color: #2ecc71;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.goal-marker {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #fff;
+}
+
+.value {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 1.1rem;
+}
+
+.monthly-intake {
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.monthly-intake h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.graphs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.graph-container {
+    flex-basis: calc(50% - 10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.graph-container canvas {
+    width: 100%;
+    height: 200px;
+}
+
+.meal-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for the meal entries */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* A red color for the delete button for intuitive UX */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+
+.delete-button:focus {
+    outline: none; /* Removing the focus outline for aesthetics */
+}
+
+/* Adding a little more style for when no meals are available */
+.no-meals {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+

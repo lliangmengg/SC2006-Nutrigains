@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.signup-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.signup-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.signup-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.signup-form input, .signup-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #40444b;
+    color: #fff;
+}
+
+#register-btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#register-btn:hover {
+    background-color: #27ae60;
+}
+
+#back-to-login {
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+#back-to-login:hover {
+    color: #2ecc71;
+}
+.signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+/* signup.css */
+
+/* ... other styles ... */
+
+.otp-verification-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px; /* Adjust as needed */
+}
+
+.otp-verification-section button,
+.otp-verification-section .otp-input-container {
+    margin: 5px 0; /* This adds spacing between the buttons and the OTP input field */
+}
+
+#register-btn {
+    margin-top: 10px; /* Adds spacing above the Register button */
+}
+#send-otp-btn {
+    margin-top: 10px; /* Adds spacing above the Register button */
+    margin-bottom: 10px;
+}
+
