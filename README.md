@@ -89,7 +89,6 @@ Nutrigains is an innovative meal recommendation and nutrition management web app
             └── DatabaseCRUDOperator.py
             └── GAIHandler.py
             └── NutritionAPIHandler.py
-            └── testing.dart
         └── 📁Control
             └── 📁__pycache__
             └── Chatbot.py
