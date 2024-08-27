@@ -16,7 +16,7 @@ Nutrigains is an innovative meal recommendation and nutrition management web app
    - In DatabaseCRUDOperator.py, locate the following line:
      ```python
      self.db_url = "mysql+pymysql://<username>:<password>@localhost:3306/nutrigains"
-   - Replace \<username>\ with your MySQL username and \<password>\ with your MySQL password.
+   - Replace \<username> with your MySQL username and \<password> with your MySQL password.
    
 3. ***Install Dependencies and Run the Backend Server:**
    ```bash
