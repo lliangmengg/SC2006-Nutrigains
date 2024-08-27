@@ -5,7 +5,7 @@ This repository is a copy of the NTU SC2006 Software Engineering Group Project: 
 Nutrigains is an innovative meal recommendation and nutrition management web application. It integrates external recipe databases and APIs like Spoonacular and Gemini to offer diverse meal options and accurate nutritional insights. Nutrigains empowers users with a comprehensive set of features, including chatbot-assisted meal recommendations, nutrition tracking and user account management.
 
 ## How to Run the Project
-1. **Run the Client Server:**
+1. **Install Dependencies and Run the Client Server:**
    ```bash
    cd client
    npm i
@@ -16,11 +16,12 @@ Nutrigains is an innovative meal recommendation and nutrition management web app
    - In DatabaseCRUDOperator.py, locate the following line:
      ```python
      self.db_url = "mysql+pymysql://<username>:<password>@localhost:3306/nutrigains"
-   - Replace <username> with your MySQL username and <password> with your MySQL password.
+   - Replace \<username>\ with your MySQL username and \<password>\ with your MySQL password.
    
-3. **Run the Backend Server:**
+3. ***Install Dependencies and Run the Backend Server:**
    ```bash
    cd server
+   npm i
    python server.py
 
 ## Project Structure
